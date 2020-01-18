@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+						web-jsptaglibrary_2_0.xsd" version="2.0">
+	<tlib-version>1</tlib-version>
+	<function>
+		<description>Date 객체를 포맷팅하여 출력</description>
+		<name>dateFormat</name>
+		<function-class>eltag.DateUtil</function-class>
+		<function-signature>
+			java.lang.String format(java.util.Date)
+		</function-signature>
+	</function>	
+</taglib>

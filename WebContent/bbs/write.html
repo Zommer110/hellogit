@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>방명록 작성하기</title>
+</head>
+<body>
+	<form method="post" action="/myWeb/VisitInsert">
+	<table align="center" width="500" border="1">
+		<tr>
+			<th width="70">작성자</th>
+		<td width="430">
+			&nbsp;<input type="text" name="writer" size="50">
+		</td>	
+		</tr>
+		
+		<tr>
+		<th>내용</th>
+		<td>
+			&nbsp;<textarea rows="7" cols="50" name="memo">
+					</textarea>
+		</td>
+		</tr>
+		
+		<tr>
+		<td colspan="2" align="center">
+			<input type="submit" value="저장">&nbsp;&nbsp;
+			<input type="reset" value="취소">
+		</td>
+		</tr>	
+	</table>	
+	</form>
+</body>
+</html>
