@@ -11,12 +11,20 @@ public class WriteFormAction implements CommandAction {
 		int num = 0, ref = 1, step = 0, depth = 0;
 		try {
 			if(request.getParameter("num") != null) {
-				System.out.println("안녕하세요");
+				num = Integer.parseInt(request.getParameter("num"));
+				ref = Integer.parseInt(request.getParameter("ref"));
+				step = Integer.parseInt(request.getParameter("step"));
+				depth = Integer.parseInt(request.getParameter("depth"));				
 			}
 		} catch (Exception e) {
-			// TODO: handle exception
+			e.printStackTrace();
 		}
-		return null;
+		//해당 뷰에서 사용할 속성
+		request.setAttribute("num", new Integer(num));
+		request.setAttribute("ref", new Integer(ref));
+		request.setAttribute("step", new Integer(step));
+		request.setAttribute("depth", new Integer(depth));
+		return "/board/writeForm.jsp";
 	}
 
 }
