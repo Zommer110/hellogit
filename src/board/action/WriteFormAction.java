@@ -11,7 +11,7 @@ public class WriteFormAction implements CommandAction {
 		int num = 0, ref = 1, step = 0, depth = 0;
 		try {
 			if(request.getParameter("num") != null) {
-				
+				System.out.println("æ»≥Á«œººø‰");
 			}
 		} catch (Exception e) {
 			// TODO: handle exception
